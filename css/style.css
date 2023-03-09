@@ -1,3 +1,130 @@
 @import url(reset.css);
 @import url(variables.css);
 
+/* header */
+.section-header{
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.header-top_contacts{
+    color: #fff;
+    text-decoration: none;
+}
+.header-top_contacts span{
+    color: var(--secondary-color);
+}
+.header-top_contacts:hover{
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.header-bottom{
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    text-decoration: none;
+}
+.nav-link:hover{
+    color: var(--secondary-color) !important;
+}
+.hero-header{
+    height:600px;
+}
+.brush{
+    position: relative;
+    bottom:-2px;
+    left:0
+}
+/* header end */
+
+/* main */
+
+.sm-title h4{
+    color: var(--secondary-color);
+    font-style: oblique;
+}
+.sm-title h2{
+    color: var(--primary-color);
+}
+.sm-title i{
+    color: var(--primary-color);
+    font-size: 40px;
+}
+
+.o-img{
+    background-image: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.o-text{
+    /* background-color: var(--secondary-color); */
+    /* background-image: url(../img/dec/cs-bg.png); */
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    background-size: cover;
+    color: var(--primary-color);
+    padding: 30px;
+}
+
+.o-text h3{
+    padding:10px 0;
+}
+.o-contacts{
+   font-size: 30px;
+   margin-top:10px;
+    color: var(--primary-color); 
+    text-decoration: none;
+}
+.o-contacts:hover{
+    color: var(--primary-color); 
+    text-decoration: none;
+}
+
+.flip-card {
+    background-color: transparent;
+    margin: 60px 0 !important;
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  
+  .flip-card-front {
+    background-color: black;
+    /* background-image: url(../img/Image.jpg); */
+    background-repeat: no-repeat;
+    background-position: center bottom ;
+    background-size: cover;
+    color: var(--secondary-color);
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: var(--primary-color);
+    transform: rotateY(180deg);
+  }

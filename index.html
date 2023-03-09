@@ -10,7 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- /Google Fonts -->
     <!-- Font Awesome Library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/regular.min.css" integrity="sha512-3YMBYASBKTrccbNMWlnn0ZoEOfRjVs9qo/dlNRea196pg78HaO0H/xPPO2n6MIqV6CgTYcWJ1ZB2EgWjeNP6XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- /Font Awesome Library -->
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
@@ -22,9 +23,185 @@
     <link rel="icon" type="image/x-icon" href="img/mobile-logo.png">
     <!-- /Favicon -->
     <title>BarTrattoriaStazione</title>
-
 </head>
 <body>
-    
+    <!-- header -->
+    <section class="section-header position-relative">
+        <div class="header-top container d-flex justify-content-end py-2">
+            <a class="header-top_contacts" href="tel:+39 0324 1871247"><span>Chiama ora al:</span> +39 0324 1871247</a>
+            <a class="header-top_contacts ms-3" href="tel: +39 351 6507729"><span>oppure al:</span> +39 351 6507729</a>
+        </div>
+        
+        <div class="header-bottom container d-flex align-items-center justify-content-between">
+            <nav class="navbar">
+                <div class="container-fluid">
+                <a class="navbar-brand d-flex align-items-center text-light" href="#">
+                    <img class="me-2" src="./img/logo.png" alt="Logo" width="120" height="80" class="d-inline-block align-text-top">
+                    BAR TRATTORIA STAZIONE
+                </a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active text-light" href="#sudinoi">SU DI NOI</a>
+                    <a class="nav-link text-light" href="#orari">ORARI DI APERTURA</a>
+                    <a class="nav-link text-light" href="#menù">MENÙ</a>
+                    <a class="nav-link text-light" href="#prossimieventi">PROSSIMI EVENTI</a>
+                    </div>
+                </div>
+                </div>
+            </nav>
+        </div>
+        <div class="hero-header container d-flex align-items-center text-light ">
+           <h1> Benvenuti al Bar Trattoria Stazione!</h1>
+        </div>
+        <div class="brush">
+        <img class="img-fluid" src="./img/brush-dec.png" alt="brush" id="sudinoi">
+        </div>
+    </section>
+    <!-- /header -->
+
+    <!-- main -->
+    <div class="container">
+        <!-- su di noi -->
+        <section class="py-5" >
+            <div class="container">
+                <div class="row">
+                    <div  class="col-md-6">
+                        <div class="sm-title">
+                            <h4>La nostra storia</h4>
+                            <h2>Due parole su di noi</h2>
+                            <div class="d-flex">
+                                <i class="fa-solid fa-ellipsis"></i>
+                                <i class="fa-solid fa-ellipsis ps-1"></i>
+                            </div>
+                        </div>
+                        <div class="sn-text pe-5 ">
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam aperiam. Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt.
+                                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur.
+                            </p>
+                            <p> Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div>
+                            <img class="img-fluid " src="./img/Image.jpg" alt="SuDiNoi">
+                        </div>
+                    </div>
+                </div>                          
+            </div>
+        </section>
+        <!--  su di noi end  --> 
+        <!-- orari -->
+        <section class="py-5" id="orari">
+            <div class="container">
+                <div class="row" style="height: 400px" >
+                   <div class="col-6 d-flex align-items-center justify-content-center o-img">
+                       Frase carina
+                   </div>
+                   <div class="col-6 d-flex align-items-center justify-content-center o-text">
+                        <div class="text-center sm-title">
+                            <h4>Vieni a trovarci</h4>
+                            <h2>Orari di apertura</h2>
+                            <br>
+                            <span>Da Lunedi a Giovedi</span>
+                            <h3> 07:30 - 00:00 </h3>
+                            <div class="d-flex justify-content-center py-3">
+                                <i class="fa-solid fa-ellipsis"></i>
+                            </div>
+                            <span>Martedì</span>
+                            <h3>Chiuso </h3>
+                            <br>
+                            <a class="o-contacts" href="tel:+39 0324 1871247">  +39 0324 1871247</a>
+                        </div>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- orari end-->
+        <!--  Caratteristiche    -->   
+        <section>
+            <div class="container  my-5" >
+                <div class="sm-title text-center">
+                    <h4>caratteristiche</h4>
+                    <h2>Cos'è importante per noi</h2>
+                </div>
+                <div class="container">
+                    <div class="row d-flex justify-content-between">
+                        <!--card item -->
+                          <div class="col-4 flip-card" style="width: 18rem" >
+                            <div class="flip-card-inner">
+                               <div class="flip-card-front">
+                                    <h4>Prodotti a km 0</h4>
+                                    <h4>La qualità è importante</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div >
+                                        <i class="fa-solid fa-utensils"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                                </div>
+                            </div>
+                          </div>
+                         <!--card item end -->
+                         <!--card item --> 
+                         <div class="col-4 flip-card"style="width: 18rem" >
+                            <div class="flip-card-inner">
+                               <div class="flip-card-front">
+                                    <h2>Pesce Fresco ogni giorno</h2>
+                                    <h4>Quality is the heart</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="dec-icon">
+                                        <i class="fa-solid fa-fish"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                                </div>
+                            </div>
+                          </div>
+                        <!--card item end -->
+            
+                        <!--card item --> 
+                        <div class="col-4 flip-card" style="width: 18rem">
+                            <div class="flip-card-inner">
+                               <div class="flip-card-front">
+                                <h2>la nostra bottega</h2>
+                                <h4>Per rifornirti sempre</h4>
+                                </div>
+                                <div class="flip-card-back">
+                                    <div class="dec-icon">
+                                        <i class="fa-solid fa-carrot"></i>
+                                    </div>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in pulvinar neque. Nulla finibus lobortis pulvinar.</p>
+                                </div>
+                            </div>
+                          </div>
+                       
+                        <!--card item end -->                                                 
+                    </div>
+                    <div class="section-dec sec-dec_top"></div>
+                    <div class="section-dec sec-dec_bottom"></div>
+                </div>
+                <div class="images-collage-item col_par" style="width:120px" data-position-left="83" data-position-top="87" data-zindex="1" data-scrollax="properties: { translateY: '150px' }"><img src="images/cube.png" alt=""></div>
+            </div>
+            <div class="section-bg">
+                <div class="bg"  data-bg="images/bg/dec/section-bg.png"></div>
+            </div>
+        </section>
+        <!--  Caratteristiche end  --> 
+        <section>
+            <div class="container  my-5">
+                <div class="sm-title text-center my-5">
+                    <h4>Il menù</h4>
+                    <h2>Scopri le nostre proposte</h2>
+                </div>
+                 </div>
+        </section>
+    <!-- /main -->
+    <!-- footer -->
+    <!-- /footer -->
 </body>
 </html>
