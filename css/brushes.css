@@ -1,0 +1,59 @@
+/*---------------
+ BRUSHES 
+ --------------*/
+
+.brush-1 {
+  position: relative;
+  bottom: -2px;
+  left: 0;
+}
+.brush-sm-2 {
+  position: relative;
+  top: 10px;
+  left: 0;
+}
+.brush-lg-2 {
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+.brush-sm-3 {
+  position: relative;
+  top: -68px;
+  left: 0;
+}
+.brush-lg-3 {
+  position: relative;
+  top: -53px;
+  left: 0;
+}
+.brush-lg-4 {
+  position: relative;
+  top: -5px;
+  left: 0;
+}
+.brush-sm-4 {
+  position: relative;
+  top: -8px;
+  left: 0;
+}
+.brush-lg-5 {
+  position: relative;
+  top: 25px;
+  left: 0;
+}
+.brush-sm-5 {
+  position: relative;
+  top: 13px;
+  left: 0;
+}
+.brush-lg-6 {
+  position: relative;
+  top: -27px;
+  left: 0;
+}
+.brush-sm-6 {
+  position: relative;
+  top: 362px;
+  left: 0;
+}

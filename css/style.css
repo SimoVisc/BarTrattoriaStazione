@@ -1,130 +1,197 @@
 @import url(reset.css);
 @import url(variables.css);
+@import url(brushes.css);
 
 /* header */
-.section-header{
-    background-image: url(../img/1.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
+.section-header {
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
-.header-top_contacts{
-    color: #fff;
-    text-decoration: none;
+.header-top_contacts {
+  color: #fff;
+  text-decoration: none;
 }
-.header-top_contacts span{
-    color: var(--secondary-color);
+.header-top_contacts span {
+  color: var(--secondary-color);
 }
-.header-top_contacts:hover{
-    color: var(--secondary-color);
-    text-decoration: none;
+.header-top_contacts:hover {
+  color: var(--secondary-color);
+  text-decoration: none;
 }
-.header-bottom{
-    background-color: var(--primary-color);
-    border: 1px solid var(--secondary-color);
-    position: fixed;
-    top:0;
-    left: 0;
-    right: 0;
-    z-index: 100;
-    text-decoration: none;
+.header-bottom {
+  background-color: var(--primary-color);
+  border: 1px solid var(--secondary-color);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-decoration: none;
 }
-.nav-link:hover{
-    color: var(--secondary-color) !important;
+.nav-link:hover {
+  color: var(--secondary-color) !important;
 }
-.hero-header{
-    height:600px;
-}
-.brush{
-    position: relative;
-    bottom:-2px;
-    left:0
+.hero-header {
+  height: 600px;
 }
 /* header end */
 
 /* main */
 
-.sm-title h4{
-    color: var(--secondary-color);
-    font-style: oblique;
+.sm-title h4 {
+  color: var(--secondary-color);
+  font-style: oblique;
 }
-.sm-title h2{
-    color: var(--primary-color);
+.sm-title h2 {
+  color: var(--primary-color);
 }
-.sm-title i{
-    color: var(--primary-color);
-    font-size: 40px;
-}
-
-.o-img{
-    background-image: url(../img/1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-.o-text{
-    /* background-color: var(--secondary-color); */
-    /* background-image: url(../img/dec/cs-bg.png); */
-    background-repeat: no-repeat;
-    background-position: center bottom ;
-    background-size: cover;
-    color: var(--primary-color);
-    padding: 30px;
+.sm-title i {
+  color: var(--primary-color);
+  font-size: 40px;
 }
 
-.o-text h3{
-    padding:10px 0;
+.o-img {
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.o-contacts{
-   font-size: 30px;
-   margin-top:10px;
-    color: var(--primary-color); 
-    text-decoration: none;
+.o-text {
+  background-color: var(--secondary-color);
+  background-image: url(../img/dec/section-bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+  color: var(--primary-color);
+  padding: 30px;
 }
-.o-contacts:hover{
-    color: var(--primary-color); 
-    text-decoration: none;
+.o-text h4,
+.o-text h5 {
+  color: var(--secondary-color);
+}
+
+.btn-contact {
+  margin-top: 20px !important;
+  font-size: 30px;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+}
+.btn-contact:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 .flip-card {
-    background-color: transparent;
-    margin: 60px 0 !important;
-  }
-  
-  .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-card:hover .flip-card-inner {
-    transform: rotateY(180deg);
-  }
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+}
 
-  .flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
-    backface-visibility: hidden;
-  }
-  
-  
-  .flip-card-front {
-    background-color: black;
-    /* background-image: url(../img/Image.jpg); */
-    background-repeat: no-repeat;
-    background-position: center bottom ;
-    background-size: cover;
-    color: var(--secondary-color);
-  }
-  
-  /* Style the back side */
-  .flip-card-back {
-    background-color: var(--primary-color);
-    transform: rotateY(180deg);
-  }
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  /* background-color: #bbb; */
+  background-image: url(../img/1.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.flip-card-back {
+  background-color: var(--primary-color);
+  padding: 20px;
+  color: var(--secondary-color);
+  transform: rotateY(180deg);
+}
+.dec-icon {
+  color: var(--secondary-color);
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/* menu */
+/* #menù {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+}
+#menù a {
+  color: white;
+  margin: 10px 0;
+}
+#menù a:hover {
+  color: var(--secondary-color);
+  margin: 10px 0;
+}
+#menù span {
+  font-size: smaller;
+  margin-right: 5px;
+}
+#menù hr {
+  width: 600px;
+  margin: 0 10px;
+  border-top: 1px solid var(--secondary-color);
+} */
+.ms-border {
+  border-right: 1px solid var(--primary-color);
+  height: 50px;
+}
+.map {
+  background-color: var(--secondary-color);
+  background-image: url(../img/dec/reservation-bg.png);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: contain;
+}
+#footer {
+  background-color: var(--primary-color);
+}
+.ms-backgrund {
+  background-color: #705d52;
+}
+#footer h3 {
+  color: #fff;
+  opacity: 70%;
+}
+#footer li {
+  list-style: none;
+  color: #fff;
+  opacity: 50%;
+}
+#footer li span {
+  font-weight: bold;
+  padding-right: 30px;
+}
+#footer a {
+  text-decoration: none;
+  color: #fff;
+  opacity: 50%;
+}
+.footer-social {
+  font-size: 30px;
+  padding-left: 30px;
+}
